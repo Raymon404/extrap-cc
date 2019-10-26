@@ -50,7 +50,7 @@ date_default_timezone_set('Asia/Jakarta');
 $waktu = date("H:i:s");
 if(preg_match_all("/$live/",$result)){
 	$buat_file = fopen("cc-live.txt", "a") or die("Unable to open file!");
-	$tulis =("$email \r\n");
+	$tulis =("$card \r\n");
 	fwrite($buat_file, $tulis);
 	fclose($buat_file); 
 	echo "\033[1;37m[$no] \033[1;32mLive => $card \033[1;37m[$waktu] \033[1;36mChecked by k0azer\n"; 
